@@ -26,7 +26,8 @@
     "contao-bootstrap/core": "^2.0",
     "markocupic/contao-news-infinite-scroll-bundle": "^1.0",
     "markocupic/gallery-creator-bundle": "^1.2",
-    "markocupic/rotate_image": "^1.0"
+    "markocupic/rotate_image": "^1.0",
+    "markocupic/contao-db-backup": "^1.2"
   },
   "autoload": {
     "psr-4": {
@@ -44,9 +45,7 @@
     "contao": {
       "sources": {
         "src/Resources/contao/templates/yellow_theme": "templates/yellow_theme",
-        "src/Resources/contao/files/yellow_theme": "files/yellow_theme",
-        "src/Resources/contao/files/news_assets": "files/news_assets",
-        "src/Resources/contao/files/gallery_creator_albums": "files/gallery_creator_albums"
+        "src/Resources/contao/files/yellow_theme": "files/yellow_theme"
       }
     }
   }
