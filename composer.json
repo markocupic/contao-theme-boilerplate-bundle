@@ -45,7 +45,8 @@
       "sources": {
         "src/Resources/contao/templates/yellow_theme": "templates/yellow_theme",
         "src/Resources/contao/files/yellow_theme": "files/yellow_theme",
-        "src/Resources/contao/files/news_assets": "files/news_assets"
+        "src/Resources/contao/files/news_assets": "files/news_assets",
+        "src/Resources/contao/files/gallery_creator_albums": "files/gallery_creator_albums"
       }
     }
   }
