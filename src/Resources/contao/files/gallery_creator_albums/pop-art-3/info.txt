@@ -1,0 +1,1 @@
+This folder is part of gallery_creator_bundle.
