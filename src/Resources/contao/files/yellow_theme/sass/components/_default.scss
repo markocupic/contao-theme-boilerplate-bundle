@@ -1,0 +1,41 @@
+body {
+  background-color:  $body-background-color;
+  font-family: $body-font-family;
+  color: $body-color;
+}
+
+#wrapper {
+  padding-bottom: 0;
+}
+
+#footer {
+  border-top: 1px dashed #000;
+  .inside {
+    padding: 2rem 1rem;
+  }
+}
+
+#header {
+  border-bottom: 1px solid #000;
+}
+
+#main .inside {
+  padding: 3rem 1rem;
+}
+
+
+
+
+.btn {
+  background-color: $button-background-color;
+  color: $button-color;
+  border: 1px solid $button-background-color;
+  border-radius: 0;
+  margin: 2rem 0;
+  &:hover{
+    background-color: $button-background-color-inverted;
+    color: $button-color-inverted;
+    border-color: $button-background-color;
+  }
+}
+

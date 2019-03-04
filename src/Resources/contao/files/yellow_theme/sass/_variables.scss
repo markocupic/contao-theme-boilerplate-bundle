@@ -1,0 +1,70 @@
+$breakpoints: (
+        small : 576px,
+        medium: 768px,
+        large : 992px,
+        xlarge: 1200px
+);
+
+// Font sizes, w/ optional line-heights for each breakpoint.
+// Null is mobile, no breakpoint.
+$p-font-sizes: (
+        null : (15px, 1.3),
+        small : 16px,
+        medium : (17px, 1.4),
+        large: 19px,
+        xlarge: 19px
+);
+
+$h1-font-sizes: (
+        null : 30px,
+        small : 40px,
+        medium : 60px,
+        large: 81px,
+        xlarge: 81px
+);
+
+$h2-font-sizes: (
+        null : 25px,
+        small : 30px,
+        medium : 35px,
+        large: 40px,
+        xlarge: 40px
+);
+
+$h3-font-sizes: (
+        null : 20px,
+        small : 25px,
+        medium : 30px,
+        large: 35px,
+        xlarge: 35px
+);
+
+$h4-font-sizes: (
+        null : 18px,
+        small : 23px,
+        medium : 28px,
+        large: 33px,
+        xlarge: 33px
+);
+
+// Body
+$body-color: #000000;
+$body-background-color: #FFE73E;
+$body-font-family: "Pt Sans Narrow", Helvetica, sans-serif;
+
+// Headlines
+$h1-font-family: 'Skranji', "Arial Black", sans-serif;
+$h1-color: $body-color;
+
+// Links
+$link-color: #dc3545;
+$link-color-hover: $body-color;
+
+// Buttons
+$button-background-color: $body-color;
+$button-color: $body-background-color;
+$button-background-color-inverted: transparent;
+$button-color-inverted: $body-color;
+
+// Z-index
+$zindex-mobile-nav: 1500;

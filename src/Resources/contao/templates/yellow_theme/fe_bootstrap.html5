@@ -1,0 +1,136 @@
+<?php $helper = ContaoBootstrap\Layout\Helper\LayoutHelper::forTemplate($this); ?>
+<!DOCTYPE html>
+<html lang="<?= $this->language ?>"<?php if ($this->isRTL): ?> dir="rtl"<?php endif; ?>>
+<head>
+
+    <?php $this->block('head'); ?>
+    <meta charset="<?= $this->charset ?>">
+    <title><?= $this->title ?></title>
+    <base href="<?= $this->base ?>">
+
+    <?php $this->block('meta'); ?>
+    <meta name="robots" content="<?= $this->robots ?>">
+    <meta name="description" content="<?= $this->description ?>">
+    <meta name="generator" content="Contao Open Source CMS">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <?php $this->endblock(); ?>
+
+    <?= $this->viewport ?>
+    <?= $this->framework ?>
+
+    <!-- Hier kommen die Head includes -->
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Skranji:700|PT+Sans+Narrow:700" rel="stylesheet">
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap.js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <?= $this->head ?>
+    <!-- Hier kommen die Stylesheets -->
+    <?= $this->stylesheets ?>
+    <?= $this->mooScripts ?>
+
+
+    <?php $this->block('html5shiv'); ?>
+    <!--[if lt IE 9]>
+    <script src="<?= TL_ASSETS_URL ?>assets/html5shiv/js/html5shiv-printshiv.min.js"></script><![endif]-->
+    <?php $this->endblock(); ?>
+    <?php $this->endblock(); ?>
+
+</head>
+<body id="top" class="{{ua::class}}<?php if ($this->class) echo ' ' . $this->class; ?>"<?php if ($this->onload): ?> onload="<?= $this->onload ?>"<?php endif; ?> itemscope itemtype="http://schema.org/WebPage">
+
+<?php $this->block('body'); ?>
+<?php $this->sections('top'); ?>
+
+<div <?= $helper->getAttributes($helper::WRAPPER) ?>>
+
+<?php $this->block('header'); ?>
+<?php if ($this->header): ?>
+<header id="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div
+    <?= $helper->getAttributes($helper::HEADER, true) ?>>
+    <?= $this->header ?>
+    </div>
+</header>
+<?php endif; ?>
+<?php $this->endblock(); ?>
+
+<?php $this->sections('before'); ?>
+
+<?php $this->block('container'); ?>
+<div <?= $helper->getAttributes($helper::CONTAINER) ?>>
+<?php if ($helper->isGridActive()): ?>
+<div class="row"><?php endif; ?>
+
+    <?php $this->block('main'); ?>
+    <main
+    <?= $helper->getAttributes($helper::MAIN) ?>>
+    <div class="inside">
+        <?= $this->main ?>
+    </div>
+    <?php $this->sections('main'); ?>
+    </main>
+    <?php $this->endblock(); ?>
+
+    <?php $this->block('left'); ?>
+    <?php if ($this->left): ?>
+    <aside
+    <?= $helper->getAttributes($helper::LEFT) ?>>
+    <div class="inside">
+        <?= $this->left ?>
+    </div>
+    </aside>
+    <?php endif; ?>
+    <?php $this->endblock(); ?>
+
+    <?php $this->block('right'); ?>
+    <?php if ($this->right): ?>
+    <aside
+    <?= $helper->getAttributes($helper::RIGHT) ?>>
+    <div class="inside">
+        <?= $this->right ?>
+    </div>
+    </aside>
+    <?php endif; ?>
+    <?php $this->endblock(); ?>
+
+    <?php if ($helper->isGridActive()): ?>
+</div><?php endif; ?>
+</div>
+<?php $this->endblock(); ?>
+
+<?php $this->sections('after'); ?>
+
+<?php $this->block('footer'); ?>
+<?php if ($this->footer): ?>
+<footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
+    <div
+    <?php echo $helper->getAttributes($helper::FOOTER, true); ?>>
+    <?= $this->footer ?>
+    </div>
+</footer>
+<?php endif; ?>
+<?php $this->endblock(); ?>
+
+</div>
+
+<?php $this->sections('bottom'); ?>
+<?php $this->endblock(); ?>
+
+<?= $this->mootools ?>
+
+</body>
+</html>

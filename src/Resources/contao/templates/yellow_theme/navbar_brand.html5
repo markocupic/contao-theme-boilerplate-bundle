@@ -1,0 +1,2 @@
+
+<a href="{{link_url::<?php echo $GLOBALS['objPage']->rootId; ?>}}" class="navbar-brand">{{image::files/yellow_theme/logo/logo.svg}}</a>
