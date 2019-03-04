@@ -44,7 +44,7 @@
     "contao-manager-plugin": "Markocupic\\ContaoThemeBoilerplateBundle\\ContaoManager\\Plugin",
     "contao": {
       "sources": {
-        "src/Resources/contao/templates/yellow_theme": "templates/yellow_theme",
+        "src/Resources/contao/templates": "templates",
         "src/Resources/contao/files/yellow_theme": "files/yellow_theme"
       }
     }
