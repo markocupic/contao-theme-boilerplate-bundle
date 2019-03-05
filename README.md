@@ -22,10 +22,15 @@ Das bundle enthält eine einfache Basis, um mit dem Theming eines Contao Themes 
 Nachdem du das Package über composer installiert hast, kopiere den Inhalt der beiden Verzeichnisse
 
 vendor/markocupic/contao-theme-boilerplate-bundle/src/Resources/contao/files nach files/
+
   und
+
 vendor/markocupic/contao-theme-boilerplate-bundle/src/Resources/contao/templates nach templates/
+
 
 ### Cache neu aufbauen nicht vergessen
 Nachdem du die beiden Verzeichnisse kopiert hast, vergiss nicht den internen Cache zu leeren.
+
 vendor/bin/contao-console cache:clear --env=dev
+
 vendor/bin/contao-console cache:clear --env=prod
