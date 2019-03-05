@@ -1,3 +1,13 @@
-.mod_newslist_infinite_scroll .pagination{
-  display:none;
+.mod_newslist_infinite_scroll {
+  .image_container {
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  .pagination {
+    display: none;
+  }
+
 }
