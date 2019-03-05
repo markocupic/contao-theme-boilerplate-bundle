@@ -36,4 +36,4 @@ vendor/bin/contao-console cache:clear --env=dev
 vendor/bin/contao-console cache:clear --env=prod
 
 
-![Theme Vorschau](src/Resources/contao/files/yellow_theme/yellow_theme.png)
+![Theme Vorschau](src/Resources/contao/files/yellow_theme/yellow-theme.png)
