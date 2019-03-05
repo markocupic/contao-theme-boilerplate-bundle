@@ -34,3 +34,6 @@ Nachdem du die beiden Verzeichnisse kopiert hast, vergiss nicht den internen Cac
 vendor/bin/contao-console cache:clear --env=dev
 
 vendor/bin/contao-console cache:clear --env=prod
+
+
+![Alt Theme Vorschau](src/Resources/contao/files/yellow_theme/yellow_theme.png?raw=true "Theme Vorschau")
