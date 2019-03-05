@@ -36,4 +36,4 @@ vendor/bin/contao-console cache:clear --env=dev
 vendor/bin/contao-console cache:clear --env=prod
 
 
-![Alt Theme Vorschau](src/Resources/contao/files/yellow_theme/yellow_theme.png?raw=true "Theme Vorschau")
+![Alt Theme Vorschau](https://github.com/markocupic/contao-theme-boilerplate-bundle/tree/master/src/Resources/contao/files/yellow_theme/yellow_theme.png?raw=true "Theme Vorschau")
