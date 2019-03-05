@@ -30,6 +30,8 @@ vendor/markocupic/contao-theme-boilerplate-bundle/src/Resources/contao/templates
 ## Template importieren
 In vendor/markocupic/contao-theme-boilerplate-bundle/src/Resources/contao/files/yellow_theme befindet sich die yellow_theme.sql Datei. Kopiere diese ins templates Verzeichnis, wenn du das Template importieren möchtest.
 
+Backend Login: username: k.jones  password: kevinjones
+
 ## Theme importieren
 In vendor/markocupic/contao-theme-boilerplate-bundle/src/Resources/contao/files/yellow_theme befindet sich die yellow_theme.cto Datei. Nutze diese Datei, wenn du das Theme aus dem Backend heraus importieren möchtest.
 
