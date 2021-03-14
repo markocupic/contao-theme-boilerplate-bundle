@@ -27,7 +27,9 @@
     "markocupic/contao-news-infinite-scroll-bundle": "^1.0",
     "markocupic/gallery-creator-bundle": "^1.2",
     "markocupic/rotate_image": "^1.0",
-    "markocupic/contao-db-backup": "^1.2"
+    "markocupic/contao-db-backup": "^1.2",
+    "markocupic/contao-component-bootstrap": "^5.0",
+    "markocupic/nav-page-container": "1.0"
   },
   "autoload": {
     "psr-4": {
@@ -44,7 +46,6 @@
     "contao-manager-plugin": "Markocupic\\ContaoThemeBoilerplateBundle\\ContaoManager\\Plugin",
     "contao": {
       "sources": {
-        
       }
     }
   }
